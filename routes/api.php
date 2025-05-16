@@ -4,7 +4,7 @@ use App\Models\Student;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-Route::group(['prefix' => 'crud-project'], function () {
+Route::group(['prefix' => 'student-crud'], function () {
     // Get all students
     Route::get('/students', function () {
         $students = Student::all();
